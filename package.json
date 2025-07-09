@@ -1,0 +1,31 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Weather MCP",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && echo '#!/usr/bin/env node' > build/index.js.tmp && cat build/index.js >> build/index.js.tmp && mv build/index.js.tmp build/index.js && chmod 755 build/index.js",
+    "start": "node build/index.js"
+  },
+  "bin": "./build/index.js",
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "mcp",
+    "weather",
+    "forecast"
+  ],
+  "author": "Mohamed Lakssir",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3"
+  }
+}
