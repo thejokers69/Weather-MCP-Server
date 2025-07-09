@@ -36,29 +36,29 @@ Many language models like Claude lack access to real-time data such as weather f
 
 The server exposes two powerful tools:
 
-* **Weather Alerts**: Get active severe weather alerts for any US state
-* **Weather Forecasts**: Get detailed weather forecasts for any US location using coordinates
+- **Weather Alerts**: Get active severe weather alerts for any US state
+- **Weather Forecasts**: Get detailed weather forecasts for any US location using coordinates
 
 Built with TypeScript and the official MCP SDK, this server follows the Model Context Protocol specification and integrates seamlessly with Claude for Desktop and other MCP-compatible clients.
 
 ## Features
 
-* 🌤️ **Real-time Weather Data**: Access current weather forecasts and alerts
-* 🚨 **Severe Weather Alerts**: Get active weather alerts by state
-* 📍 **Location-based Forecasts**: Get detailed forecasts using latitude/longitude coordinates
-* 🔧 **MCP Compliant**: Built using the official Model Context Protocol SDK
-* 🚀 **Zero Configuration**: No API keys required - uses free NWS API
-* 📦 **Easy Installation**: Simple npm/pnpm installation process
-* 🛡️ **Error Handling**: Robust error handling for network issues and invalid inputs
-* 🎯 **TypeScript**: Full TypeScript support with type safety
+- 🌤️ **Real-time Weather Data**: Access current weather forecasts and alerts
+- 🚨 **Severe Weather Alerts**: Get active weather alerts by state
+- 📍 **Location-based Forecasts**: Get detailed forecasts using latitude/longitude coordinates
+- 🔧 **MCP Compliant**: Built using the official Model Context Protocol SDK
+- 🚀 **Zero Configuration**: No API keys required - uses free NWS API
+- 📦 **Easy Installation**: Simple npm/pnpm installation process
+- 🛡️ **Error Handling**: Robust error handling for network issues and invalid inputs
+- 🎯 **TypeScript**: Full TypeScript support with type safety
 
 ## Installation
 
 ### Prerequisites
 
-* Node.js 18+
-* pnpm (recommended) or npm
-* TypeScript 5.0+
+- Node.js 18+
+- pnpm (recommended) or npm
+- TypeScript 5.0+
 
 ### Installation Steps
 
@@ -111,8 +111,8 @@ After installation, the server is ready to use with Claude for Desktop:
 2. **Restart Claude for Desktop**
 
 3. **Test the tools**:
-   * Ask Claude: "What are the weather alerts in California?"
-   * Ask Claude: "What's the weather forecast for coordinates 40.7128, -74.0060?"
+   - Ask Claude: "What are the weather alerts in California?"
+   - Ask Claude: "What's the weather forecast for coordinates 40.7128, -74.0060?"
 
 ## Usage
 
@@ -124,7 +124,7 @@ Get weather alerts for a specific US state.
 
 **Parameters:**
 
-* `state` (string): Two-letter state code (e.g., "CA", "NY", "TX")
+- `state` (string): Two-letter state code (e.g., "CA", "NY", "TX")
 
 **Example:**
 
@@ -143,8 +143,8 @@ Get weather forecast for a specific location using coordinates.
 
 **Parameters:**
 
-* `latitude` (number): Latitude coordinate (-90 to 90)
-* `longitude` (number): Longitude coordinate (-180 to 180)
+- `latitude` (number): Latitude coordinate (-90 to 90)
+- `longitude` (number): Longitude coordinate (-180 to 180)
 
 **Example:**
 
@@ -162,7 +162,7 @@ Get weather forecast for a specific location using coordinates.
 
 **Weather Alerts:**
 
-```
+```shell
 Active alerts for CA:
 
 Event: Severe Thunderstorm Warning
@@ -175,7 +175,7 @@ Headline: Severe Thunderstorm Warning issued for Los Angeles County
 
 **Weather Forecast:**
 
-```
+```shell
 Forecast for 40.7128, -74.0060:
 
 Tonight:
@@ -222,10 +222,10 @@ No environment variables are required. The server uses the free US National Weat
 
 This server integrates with the [US National Weather Service API](https://www.weather.gov/documentation/services-web-api):
 
-* **Base URL**: `https://api.weather.gov`
-* **Authentication**: None required
-* **Rate Limits**: None specified
-* **Coverage**: United States only
+- **Base URL**: `https://api.weather.gov`
+- **Authentication**: None required
+- **Rate Limits**: None specified
+- **Coverage**: United States only
 
 ### Server Endpoints
 
@@ -237,10 +237,10 @@ The server exposes two MCP tools that internally call the NWS API:
 
 ## Known issues and limitations
 
-* **US Coverage Only**: The National Weather Service API only covers the United States
-* **Coordinate Precision**: Coordinates are rounded to 4 decimal places for API compatibility
-* **Network Dependency**: Requires internet connection to access weather data
-* **API Reliability**: Depends on the NWS API availability and response times
+- **US Coverage Only**: The National Weather Service API only covers the United States
+- **Coordinate Precision**: Coordinates are rounded to 4 decimal places for API compatibility
+- **Network Dependency**: Requires internet connection to access weather data
+- **API Reliability**: Depends on the NWS API availability and response times
 
 ## Getting help
 
@@ -273,11 +273,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* **Model Context Protocol**: For providing the excellent SDK and specification
-* **US National Weather Service**: For providing free, reliable weather data
-* **Claude for Desktop**: For implementing MCP client support
-* **TypeScript Team**: For the excellent type system and tooling
-* **pnpm**: For fast, efficient package management
+- **Model Context Protocol**: For providing the excellent SDK and specification
+- **US National Weather Service**: For providing free, reliable weather data
+- **Claude for Desktop**: For implementing MCP client support
+- **TypeScript Team**: For the excellent type system and tooling
+- **pnpm**: For fast, efficient package management
 
 ---
 
