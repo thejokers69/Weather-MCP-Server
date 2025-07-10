@@ -12,6 +12,7 @@ A Model Context Protocol (MCP) server that provides real-time weather data and a
     - [Prerequisites](#prerequisites)
     - [Installation Steps](#installation-steps)
   - [Quick start](#quick-start)
+    - [For Client Developers](#for-client-developers)
   - [Usage](#usage)
     - [Available Tools](#available-tools)
       - [`get-alerts`](#get-alerts)
@@ -27,6 +28,7 @@ A Model Context Protocol (MCP) server that provides real-time weather data and a
   - [Getting help](#getting-help)
   - [Contributing](#contributing)
     - [Development Setup](#development-setup)
+  - [Original Author and License](#original-author-and-license)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
@@ -94,7 +96,20 @@ You should see: `Weather MCP Server running on stdio`
 After installation, the server is ready to use with Claude for Desktop:
 
 1. **Configure Claude for Desktop**:
-   Add this to your `claude_desktop_config.json`:
+
+   **macOS**: Open the configuration file:
+
+   ```bash
+   code ~/Library/Application\ Support/Claude/claude_desktop_config.json
+   ```
+
+   **Windows**: Open the configuration file:
+
+   ```cmd
+   code "%APPDATA%\Claude\claude_desktop_config.json"
+   ```
+
+   Add this configuration to your `claude_desktop_config.json`:
 
    ```json
    {
@@ -108,11 +123,17 @@ After installation, the server is ready to use with Claude for Desktop:
    }
    ```
 
+   **Note**: Replace `/path/to/weather/build/index.js` with the actual absolute path to your weather server build file.
+
 2. **Restart Claude for Desktop**
 
 3. **Test the tools**:
    - Ask Claude: "What are the weather alerts in California?"
    - Ask Claude: "What's the weather forecast for coordinates 40.7128, -74.0060?"
+
+### For Client Developers
+
+If you're building your own MCP client, check out the [MCP Quickstart for Client Developers](https://modelcontextprotocol.io/quickstart/client) to learn how to integrate with this weather server and other MCP servers.
 
 ## Usage
 
@@ -266,6 +287,16 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 5. Commit your changes: `git commit -m 'Add amazing feature'`
 6. Push to the branch: `git push origin feature/amazing-feature`
 7. Open a Pull Request
+
+## Original Author and License
+
+This example is based on the code explained in [MCP Quickstart](https://modelcontextprotocol.io/quickstart)
+([github](https://github.com/modelcontextprotocol/docs)),
+whose license is [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
+The completed code examples are also hosted in
+[this repo](https://github.com/modelcontextprotocol/quickstart-resources),
+whose license is MIT (Copyright (c) 2025 Model Context Protocol).
+So I've chosen the MIT license for this repo.
 
 ## License
 
