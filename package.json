@@ -1,11 +1,13 @@
 {
   "name": "weather",
   "version": "1.0.0",
-  "description": "Weather MCP",
+  "description": "A Model Context Protocol (MCP) server that provides real-time weather data and alerts using the US National Weather Service API",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && chmod 755 build/index.js"
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js"
   },
   "bin": "./build/index.js",
   "files": [
@@ -26,5 +28,9 @@
   "devDependencies": {
     "@types/node": "^24.0.12",
     "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/weather-mcp-server.git"
   }
 }
