@@ -1,0 +1,14 @@
+.
+├── build
+│   └── index.js
+├── LICENSE
+├── package.json
+├── pnpm-lock.yaml
+├── project_structure.txt
+├── README.md
+├── SECURITY.md
+├── src
+│   └── index.ts
+└── tsconfig.json
+
+3 directories, 9 files
